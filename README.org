@@ -12,8 +12,9 @@
 
 * Description
 This repository allow to separately build "FileCheck" and "llvm-lit"
-from LLVM. It has /[[https://github.com/llvm-mirror/llvm.git][llvm-mirror/llvm/]] as sub-module and a custom
-/CMakeLists.txt/ to separately build and install those two tools.
+from LLVM as stand-alone tools. It has /[[https://github.com/llvm-mirror/llvm.git][llvm-mirror/llvm/]] as
+sub-module and a custom /CMakeLists.txt/ to separately build and
+install the two programs.
 
 * Prerequisites
 To compile the TestingTools you need an host Clang/LLVM version >= 3.9, a

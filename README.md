@@ -2,24 +2,25 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org4065b61">1. Description</a></li>
-<li><a href="#orgcc1f283">2. Prerequisites</a></li>
-<li><a href="#orgddb6717">3. Installation</a></li>
+<li><a href="#org1893f4e">1. Description</a></li>
+<li><a href="#org1d071db">2. Prerequisites</a></li>
+<li><a href="#orgedb5198">3. Installation</a></li>
 </ul>
 </div>
 </div>
 
 
-<a id="org4065b61"></a>
+<a id="org1893f4e"></a>
 
 # Description
 
 This repository allow to separately build "FileCheck" and "llvm-lit"
-from LLVM. It has *[llvm-mirror/llvm/](https://github.com/llvm-mirror/llvm.git) as sub-module and a custom
-/CMakeLists.txt* to separately build and install those two tools.
+from LLVM as stand-alone tools. It has *[llvm-mirror/llvm/](https://github.com/llvm-mirror/llvm.git) as
+sub-module and a custom /CMakeLists.txt* to separately build and
+install the two programs.
 
 
-<a id="orgcc1f283"></a>
+<a id="org1d071db"></a>
 
 # Prerequisites
 
@@ -30,7 +31,7 @@ Ninja build system is preferred. For more information how to obtain
 Ninja visit <https://martine.github.io/ninja>.
 
 
-<a id="orgddb6717"></a>
+<a id="orgedb5198"></a>
 
 # Installation
 
