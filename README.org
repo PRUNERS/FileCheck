@@ -12,7 +12,7 @@
 
 * Description
 This repository allow to separately build "FileCheck" and "llvm-lit"
-from LLVM as stand-alone tools. It has /[[https://github.com/llvm-mirror/llvm.git][llvm-mirror/llvm/]] as
+from LLVM as stand-alone tools. It has /[[https://github.com/llvm-mirror/llvm.git][llvm-mirror/llvm\/]] as
 sub-module and a custom /CMakeLists.txt/ to separately build and
 install the two programs.
 
