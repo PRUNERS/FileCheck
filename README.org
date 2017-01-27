@@ -1,0 +1,29 @@
+#+DESCRIPTION: LLVM Integrated Tester Tools, llvm-lit and FileCheck
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+XSLT:
+
+* Description
+This repository allow to separately build "FileCheck" and "llvm-lit"
+from LLVM.
+It has [[https://github.com/llvm-mirror/llvm.git][llvm-mirror/llvm]] as sub-module and a custom CMakeLists.txt to separately build and install those two tools.
+
+* Installation
+
+#+BEGIN_SRC bash :exports code
+  git clone git@github.com:PRUNERS/TestingTools.git
+  cd TestingTools
+  cmake -G Ninja \
+   -D CMAKE_CXX_COMPILER=clang++ \
+   -D CMAKE_INSTALL_PREFIX:PATH=/install/path \
+   -DCMAKE_CXX_FLAGS="-fno-rtti" \
+   ..
+  ninja && ninja install
+#+END_SRC
