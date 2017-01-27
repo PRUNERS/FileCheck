@@ -2,14 +2,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8ff0d8a">1. Description</a></li>
-<li><a href="#org10c7e24">2. Installation</a></li>
+<li><a href="#org0c86dc5">1. Description</a></li>
+<li><a href="#orgbbe1601">2. Installation</a></li>
 </ul>
 </div>
 </div>
 
 
-<a id="org8ff0d8a"></a>
+<a id="org0c86dc5"></a>
 
 # Description
 
@@ -18,12 +18,13 @@ from LLVM. It has [llvm-mirror/llvm](https://github.com/llvm-mirror/llvm.git) as
 CMakeLists.txt to separately build and install those two tools.
 
 
-<a id="org10c7e24"></a>
+<a id="orgbbe1601"></a>
 
 # Installation
 
     git clone git@github.com:PRUNERS/TestingTools.git
     cd TestingTools
+    mkdir build && cd build
     cmake -G Ninja \
      -D CMAKE_CXX_COMPILER=clang++ \
      -D CMAKE_INSTALL_PREFIX:PATH=/install/path \
