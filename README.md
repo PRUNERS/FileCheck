@@ -2,15 +2,15 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org98f9835">1. Description</a></li>
-<li><a href="#org3d7b546">2. Prerequisites</a></li>
-<li><a href="#orge6a0a1a">3. Installation</a></li>
+<li><a href="#org4065b61">1. Description</a></li>
+<li><a href="#orgcc1f283">2. Prerequisites</a></li>
+<li><a href="#orgddb6717">3. Installation</a></li>
 </ul>
 </div>
 </div>
 
 
-<a id="org98f9835"></a>
+<a id="org4065b61"></a>
 
 # Description
 
@@ -19,7 +19,7 @@ from LLVM. It has *[llvm-mirror/llvm/](https://github.com/llvm-mirror/llvm.git) 
 /CMakeLists.txt* to separately build and install those two tools.
 
 
-<a id="org3d7b546"></a>
+<a id="orgcc1f283"></a>
 
 # Prerequisites
 
@@ -30,11 +30,11 @@ Ninja build system is preferred. For more information how to obtain
 Ninja visit <https://martine.github.io/ninja>.
 
 
-<a id="orge6a0a1a"></a>
+<a id="orgddb6717"></a>
 
 # Installation
 
-    git clone git@github.com:PRUNERS/TestingTools.git
+    git clone --recursive git@github.com:PRUNERS/TestingTools.git
     cd TestingTools
     mkdir build && cd build
     cmake -G Ninja \

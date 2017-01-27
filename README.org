@@ -25,7 +25,7 @@ Ninja visit https://martine.github.io/ninja.
 * Installation
 
 #+BEGIN_SRC bash :exports code
-  git clone git@github.com:PRUNERS/TestingTools.git
+  git clone --recursive git@github.com:PRUNERS/TestingTools.git
   cd TestingTools
   mkdir build && cd build
   cmake -G Ninja \
